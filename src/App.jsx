@@ -7,10 +7,10 @@ const App = () => {
   return (
     <>
       {
-      selectedContactId?
-      <div>Selected Contact View</div>:
-      <ContactList setSelectedContactId={setSelectedContactId}/>
-      // <SelectedContact selectedContactId={selectedContactId}/>
+        selectedContactId?
+        <div><SelectedContact selectedContactId={selectedContactId} setSelectedContactId={setSelectedContactId}/></div>:
+        <ContactList setSelectedContactId={setSelectedContactId}/>
+        // <SelectedContact selectedContactId={selectedContactId} />
       }
     </>
   )
